@@ -101,7 +101,7 @@ var redmineIssueHistoryPlugin = {
 		$("#issue_search_history_attribute").val("");
 		$("#issue_search_history_text").val("");
 		$("#issue_search_history_show_comments").prop("checked", true);
-		$("#issue_search_history_show_details").prop("checked", true);
+		$("#issue_search_history_show_details").prop("checked", false);
 		window.redmineIssueHistoryPlugin.updateFilter();
 	},
 
@@ -141,7 +141,7 @@ var redmineIssueHistoryPlugin = {
 							"</select>" +
 						"</label>" +
 						"<label>" +
-							"<input id='issue_search_history_show_details' type='checkbox' checked/>" +
+							"<input id='issue_search_history_show_details' type='checkbox'/>" +
 							"Display changed attributes" +
 						"</label>" +
 						"<label>" +
@@ -178,6 +178,7 @@ var redmineIssueHistoryPlugin = {
 			$("#issue_search_history_text").keyup(this.updateFilter);
 			$("#issue_search_history_show_comments").change(this.updateFilter);
 			$("#issue_search_history_show_details").change(this.updateFilter);
+			window.redmineIssueHistoryPlugin.updateFilter();
 		} catch (e) {
 			console.log(e);
 		}

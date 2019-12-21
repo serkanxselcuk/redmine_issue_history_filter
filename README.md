@@ -1,4 +1,4 @@
-This plugin hides attribute change history (shows only comments) on "issue" view of the Redmine project management application and adds simple filtering capabilities.
+This plugin shows only comments on "issue history" of the Redmine project management application and adds simple filtering capabilities.
 
 ## Introduction
 
@@ -7,7 +7,7 @@ This plugin hides attribute change history (shows only comments) on "issue" view
 ## Features
 
 * Show/hide details in the entries (i.e. changed values of the issue attributes) [Default: hide]
-* Show/hide comment text in the entries [Default:show]
+* Show/hide comment text in the entries [Default: show]
 * Show only entries that contain specific string
 * Show only entries that contain modification for the specific issue attribute
 * Show only entries from the specific author
